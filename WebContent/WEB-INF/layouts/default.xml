@@ -7,7 +7,7 @@
 	<definition name="baselayout" template="/WEB-INF/template/default.jsp">
 		<put-attribute name="header" value="/WEB-INF/tiles/header.jsp"></put-attribute>
 		<put-attribute name="body" value="/WEB-INF/tiles/body.jsp"></put-attribute>
-		<!--  <put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute>  -->
+		 <put-attribute name="footer" value="/WEB-INF/tiles/footer.jsp"></put-attribute> 
 
 	</definition>
 
@@ -15,7 +15,17 @@
 
 	<definition name="index" extends="baselayout">
 		<put-attribute name="title" value="Home"></put-attribute>
-		<put-attribute name="body" value="/WEB-INF/tiles/body.jsp"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/index.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="contact" extends="baselayout">
+		<put-attribute name="title" value="Contact Us"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/contact.jsp"></put-attribute>
+	</definition>
+	
+	<definition name="gallery" extends="baselayout">
+		<put-attribute name="title" value="Contact Us"></put-attribute>
+		<put-attribute name="body" value="/WEB-INF/tiles/gallery.jsp"></put-attribute>
 	</definition>
 	<!--  
 	<definition name="about" extends="baselayout">
@@ -23,10 +33,7 @@
 		<put-attribute name="body" value="/WEB-INF/tiles/about.jsp"></put-attribute>
 	</definition>
 	
-	<definition name="contactus" extends="baselayout">
-		<put-attribute name="title" value="Contact Us"></put-attribute>
-		<put-attribute name="body" value="/WEB-INF/tiles/contactus.jsp"></put-attribute>
-	</definition>
+	
 	
 	<definition name="team" extends="baselayout">
 		<put-attribute name="title" value="Our Team"></put-attribute>

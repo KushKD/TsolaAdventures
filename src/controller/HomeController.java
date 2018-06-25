@@ -31,6 +31,11 @@ public class HomeController {
 		return "gallery";
 	}
 	
+	@RequestMapping(value="/contact", method=RequestMethod.GET)
+	public String getContact(){
+		return "contact";
+	}
+	
 	
 	
 
